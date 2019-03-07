@@ -10,6 +10,9 @@ import { LoginComponent } from './login/login.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { RightscreenComponent } from './rightscreen/rightscreen.component';
 import { BoardlistComponent } from './boardlist/boardlist.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MeterialModule } from './meterial/meterial.module';
+
 
 
 @NgModule({
@@ -23,7 +26,8 @@ import { BoardlistComponent } from './boardlist/boardlist.component';
   imports: [ 
     BrowserModule, 
     HttpClientModule, 
-    FormsModule 
+    FormsModule, BrowserAnimationsModule,
+    MeterialModule
   ],
   bootstrap: [AppComponent]
 })
